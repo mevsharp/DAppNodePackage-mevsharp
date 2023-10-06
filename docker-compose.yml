@@ -1,0 +1,16 @@
+version: "1"
+services:
+  mevsharp:
+    build:
+      context: src
+      args:
+        UPSTREAM_VERSION: 0.1.0
+    volumes:
+      - "data:/var/lib/mevsharp"
+    environment:
+      RELAYS: ""
+      EXTRA_OPTS: ""
+    image: "mevsharp.mevsharp.dnp.dappnode.eth:0.1.0"
+    restart: unless-stopped
+volumes:
+  data: {}

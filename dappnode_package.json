@@ -1,0 +1,30 @@
+{
+  "name": "mevsharp.dnp.dappnode.eth",
+  "version": "0.1.0",
+  "shortDescription": "mevsharp is a MEV proxy written in C# that allow validators to outsource block construction for maximum extractable value.",
+  "description": "mevsharp acts as an intermediary between your validator and external block builders. By connecting mevsharp to various relays, mevsharp will evaluate bids from external builders and choose the one that provide the most profitable block for your validator to build.",
+  "upstreamRepo": "mevsharp/mevsharp",
+  "upstreamVersion": "0.1.0",
+  "upstreamArg": "UPSTREAM_VERSION",
+  "type": "service",
+  "author": "mevsharp <hello@mevsharp.io> (https://github.com/mevsharp)",
+  "contributors": ["mevsharp <hello@mevsharp.io> (https://github.com/mevsharp)"],
+  "architectures": ["linux/amd64"],
+  "categories": ["Economic incentive"],
+  "links": {
+    "endpoint": "http://mevsharp.mevsharp.dappnode:18550",
+    "homepage": "https://github.com/mevsharp/mevsharp",
+    "docs": "https://github.com/mevsharp/mevsharp"
+  },
+  "bugs": {
+    "url": "https://github.com/dappnode/DAppNodePackage-mevsharp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dappnode/DAppNodePackage-mevsharp"
+  },
+  "license": "MIT",
+  "requirements": {
+    "minimumDappnodeVersion": "0.2.58"
+  }
+}

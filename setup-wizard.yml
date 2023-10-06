@@ -1,0 +1,11 @@
+version: "1"
+fields:
+  - id: relays
+    target:
+      type: environment
+      name: RELAYS
+      service: mevsharp
+    title: RELAYS
+    description: >-
+      mevsharp acts as an intermediary between your validator and external block builders. By connecting mevsharp to various relays, mevsharp will evaluate bids from external builders and choose the one that provide the most profitable block for your validator to build.
+    required: false
